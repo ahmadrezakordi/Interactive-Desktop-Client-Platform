@@ -1,0 +1,85 @@
+            body{
+                margin: 0;
+                overflow-y: hidden;
+                overflow-x: hidden;
+            }
+
+            #screen{
+                height: 600px;
+                width: 100%;
+                display: none;
+            }
+
+            .seld{
+                display: block !important;
+            }
+
+            #screen > #desktop{
+                height: 92%;
+                background: url(../images/b3.webp) no-repeat;
+            }
+
+            #screen > #desktop > #programBar{
+                width: 100px;
+                height: 420px;
+                position: relative;
+                top: 0;
+                left: 0;
+            }
+
+            #screen > #desktop > #programBar > div{
+                height: 120px;
+            }
+
+            #screen > #desktop > #programBar > div:hover{
+                background-color: rgb(179, 189, 189);
+            }
+
+            #screen > #desktop > #programBar > div > .icon{
+                height: 100px;
+            }
+
+            #screen > #desktop > #programBar > div > .name{
+                height: 40px;
+                color: aliceblue;
+                text-align: center;
+            }
+
+            #screen > #desktop > #programBar > div > .icon > .box{
+                border: 2px solid #ccc;
+                width: 15px;
+                height: 15px;
+                z-index: 100;
+                display:none;
+            }
+
+            #screen > #desktop > #programBar > div:hover > .icon > .box{
+                display: block;
+            }
+
+            #screen > #desktop > #programBar > div > .icon > .box.show {
+                display: block;
+                background-color: aqua;
+            }
+
+            #screen > #desktop > #programBar > #myCoumputer > .icon{
+                background: url(../images/thispc.png) no-repeat 50%;
+                background-size: contain;
+            }
+
+            #screen > #desktop > #programBar > #RecycleBin > .icon{
+                background: url(../images/recyclebin.png) no-repeat 50%;
+                background-size: 70%;
+            }
+
+            #screen > #desktop > #programBar > #telegram > .icon{
+                background: url(../images/telegram.png) no-repeat 50%;
+                background-size: 70%;
+            }
+
+            #myCoumputer > .pc,
+            #RecycleBin > .rec,
+            #telegram > .tel {
+                position: relative;
+                z-index: 1;
+            }

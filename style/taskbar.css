@@ -1,0 +1,272 @@
+            #screen > #taskbar{
+                height: 8%;
+                background-color: rgb(156, 142, 167);
+
+                display: flex;
+                justify-content: right;
+                align-items: center;
+                gap: 200px;
+            }
+
+            #screen > #taskbar > #iconBar{
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 5px;
+            }
+
+            #screen > #taskbar > #iconBar > div{
+                border-radius: 10px;
+                width: 50px;
+                height: 100%;
+                text-align: center;
+            }
+
+            #screen > #taskbar > #iconBar > div:hover:not(.search){
+                background-color: rgb(205, 221, 221);
+            }
+
+            #screen > #taskbar > #iconBar > .windows{
+                background: url(../images/windows.png) no-repeat 50%;
+                background-size: 80%;
+            }
+
+            #screen > #taskbar > #iconBar > .windows > .menu{
+                height: 400px;
+                width: 600px;
+                background-color: rgb(213, 205, 221);
+                border-radius: 10px;
+                position: relative;
+                top: -420px;
+                left: -100px;
+                transition: 0.5s;
+                display: none;
+            }
+
+            #screen > #taskbar > #iconBar > .windows > .menu > .search{
+                height: 100px;
+            }
+
+            #screen > #taskbar > #iconBar > .windows > .menu > .search > input{
+                height: 50px;
+                width: 90%;
+                margin: 10px auto;
+                border: 0 none;
+                border-radius: 50px;
+                text-indent: 10px;
+            }
+
+            #screen > #taskbar > #iconBar > .windows > .menu > .title{
+                text-align: left;
+                margin-left: 20px;
+                margin-bottom: 5px;
+                line-height: 20px;
+            }
+
+            #screen > #taskbar > #iconBar > .windows > .menu > .programs{
+                height: 200px;
+                width: 90%;
+                margin: 0 auto;
+                border: 2px solid rgb(156, 142, 167);
+                border-radius: 10px;
+            }
+
+            #screen > #taskbar > #iconBar > .windows > .menu > .programs > .tel{
+                height: 60px;
+                width: 60px;
+                background: url(../images/telegram.png) no-repeat 50%;
+                background-size: 80%;
+                border-radius: 10px;
+            }
+
+            #screen > #taskbar > #iconBar > .windows > .menu > .programs > .tel:hover{
+                background-color: rgb(178, 165, 189);
+            }
+
+            #screen > #taskbar > #iconBar > .windows > .menu > .power{
+                height: 65.5px;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+                margin: 0 auto;
+                margin-top: 10px;
+                background-color: rgb(178, 165, 189);
+            }
+
+            #screen > #taskbar > #iconBar > .windows > .menu > .power > .buttom{
+                height: 40px;
+                width: 40px;
+                border-radius: 10px;
+                background: url(../images/power.png) no-repeat 50%;
+                background-size: 70%;
+                position: relative;
+                top: 10px;
+                left: 500px;
+            }
+
+            #screen > #taskbar > #iconBar > .windows > .menu > .power > .buttom:hover{
+                background-color: rgb(242, 233, 248);
+            }
+
+            #screen > #taskbar > #iconBar > .windows > .menu > .power > .buttom > .holder{
+                height: 120px;
+                width: 100px;
+                background-color: rgb(235, 220, 245);
+                border-radius: 10px;
+                position: relative;
+                top: -122px;
+                right: 28px;
+                display: none;
+            }
+
+            #screen > #taskbar > #iconBar > .windows > .menu > .power > .buttom > .holder > div{
+                border-bottom: 1px solid #ccc;
+                height: 33%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                cursor: pointer;
+            }
+
+            #screen > #taskbar > #iconBar > .windows > .menu > .power > .buttom > .holder > div:hover{
+                background-color: rgb(223, 199, 240);
+            }
+
+            #screen > #taskbar > #iconBar > .windows > .menu > .power > .buttom > .holder > .shutDown{
+                transition: 0.3s;
+            }
+
+            #screen > #taskbar > #iconBar > .windows > .menu > .power > .buttom > .holder > .sleep{
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+
+            #screen > #taskbar > #iconBar > .windows > .menu > .power > .buttom > .holder > .restart{
+                border-bottom: none;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+
+            #screen > #taskbar > #iconBar > .search{
+                width: 250px;
+                
+            }
+
+            #screen > #taskbar > #iconBar > .search > input{
+                height: 30px;
+                width: 90%;
+                border-radius: 30px;
+                border: 0 none;
+                margin-top: 7px;
+                text-indent: 40px;
+            }
+
+            #screen > #taskbar > #iconBar > .folder{
+                background: url(../images/folder.png) no-repeat 50%;
+                background-size: 80%;
+            }
+
+            #screen > #taskbar > #iconBar > .sel1{
+                background-color: rgb(205, 221, 221);
+            }
+
+            #screen > #taskbar > #iconBar > .MicrosoftStore{
+                background: url(../images/microsoft-store.png) no-repeat 50% 40%;
+                background-size: 70%;
+            }
+
+            #screen > #taskbar > #iconBar > .telegram{
+                background: url(../images/telegram.png) no-repeat 50% 40%;
+                background-size: 80%;
+            }
+
+            #screen > #taskbar > #iconBar > .sel4{
+                background-color: rgb(205, 221, 221);
+            }
+
+            #screen > #taskbar > #iconBar > .rec{
+                background: url(../images/recyclebin.png) no-repeat 50% 40%;
+                background-size: 80%;
+                visibility: hidden;
+            }
+
+            #screen > #taskbar > #iconBar > .sel2{
+                background-color: rgb(205, 221, 221);
+                visibility: visible;
+            }
+
+
+            #screen > #taskbar > #sideIconBar{
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 5px;
+                margin-right: 10px;
+            }
+
+            #screen > #taskbar > #sideIconBar > div{
+                border-radius: 5px;
+                width: 30px;
+                height: 100%;
+                text-align: center;
+            }
+
+            #screen > #taskbar > #sideIconBar > div:hover{
+                background-color: rgb(205, 221, 221);
+            }
+
+            #screen > #taskbar > #sideIconBar > .felesh{
+                background: url(../images/arrow.png) no-repeat 50%;
+                background-size: 90%;
+                transition: 0.2s;
+            }
+
+            #screen > #taskbar > #sideIconBar > .felesh > .holder{
+                height: 50px;
+                width: 120px;
+                border-radius: 10px;
+                background-color: #fff;
+                position: relative;
+                top: -60px;
+                right: 45px;
+                display: none;
+                transition: 0.3s;
+            }
+
+            #screen > #taskbar > #sideIconBar > .felesh > .holder > .idm{
+                height: 100%;
+                width:30%;
+                border-radius: 10px;
+                background: url("../images/idm.png") no-repeat 50%;
+                background-size: 80%;
+                position: relative;
+                left: 5px;
+            }
+
+            #screen > #taskbar > #sideIconBar > .felesh > .holder > .idm:hover{
+                background-color: rgb(205, 221, 221);
+            }
+
+            #screen > #taskbar > #sideIconBar > .language{
+                background: url(../images/e.png) no-repeat 50%;
+                background-size: 60%;
+            }
+
+            #screen > #taskbar > #sideIconBar > .wifi{
+                background: url(../images/wifi.png) no-repeat 50%;
+                background-size: 80%;
+            }
+
+            #screen > #taskbar > #sideIconBar > .sound{
+                background: url(../images/sound.png) no-repeat 50%;
+                background-size: 70%;
+            }
+
+            #screen > #taskbar > #sideIconBar > .time{
+                width: 70px;
+                font-size: 13px;
+                display: flex;
+                align-items: center;
+            }

@@ -1,0 +1,19 @@
+            #right{
+                position:absolute;
+                background:#fff; 
+                border:1px solid #ccc; 
+                height: 90px;
+                width: 100px;
+                box-shadow:0 0 10px rgba(0,0,0,0.2); 
+                z-index:1000;
+                display:none; 
+            }
+
+            #right > .items {
+                cursor: pointer;
+                height: 30px;
+            }
+
+            #right > .items:hover {
+                background-color: #ccc;
+            }
