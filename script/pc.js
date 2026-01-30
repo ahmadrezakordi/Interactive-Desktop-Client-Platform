@@ -348,16 +348,6 @@
                 t5.classList.add('sel4');
             };
 
-            // t5.onclick = function () {
-            //     if (p4.classList.contains('sel4')) {
-            //         p4.classList.remove('sel4');
-            //         menu1.classList.remove('sell');
-            //     } else {
-            //         p4.classList.add('sel4'); 
-            //         t5.classList.add('sel4');
-            //     }
-            // }
-
             function resettel() {
                 menu1.classList.remove('sell');
             }
@@ -430,6 +420,34 @@
             //-------------------------------------------------------------------------
             // power:
 
+            const buttom = document.querySelectorAll('#iconBar > .windows > .menu > .power > .buttom')[0];
+            const power = document.querySelectorAll('#iconBar > .windows > .menu > .power > .buttom > .holder')[0];
+            var t2 = 0
+
+            buttom.onclick = function (e) {
+                e.stopPropagation();
+                if (t2 == 0) {
+                    power.style.display = 'block';
+                    t2 = 1;
+                } else if (t2 == 1) {
+                    power.style.display = 'none';
+                    t2 = 0;
+                }
+            };
+
+            power.addEventListener('click', function (e) {
+                    e.stopPropagation();
+            });
+
+            function resetPower() {
+                    power.style.display = 'none';
+                    t2 = 0;
+                }
+
+            document.body.addEventListener('click', function () {
+                    resetPower();
+            });
+
 
             const power1 = document.querySelectorAll('#screen > #taskbar > #iconBar > .windows > .menu > .power > .buttom > .holder > .shutDown')[0];
             const screen1 = document.querySelectorAll('#screen')[0];
@@ -438,6 +456,15 @@
                 screen1.style.background = 'black';
                 document.querySelector('#desktop').style.display = 'none';
                 document.querySelector('#taskbar').style.display = 'none';
+            }
+
+            const restart = document.querySelectorAll('#screen > #taskbar > #iconBar > .windows > .menu > .power > .buttom > .holder > .restart')[0];
+
+            restart.onclick = function (){
+                screen1.style.background = 'black';
+                dd.classList.remove('seld');
+
+                ff.classList.remove('self');
             }
 
             //-------------------------------------------------------------------------
@@ -462,18 +489,6 @@
                 er.classList.add('sel');
             }
             };
-
-            //-------------------------------------------------------------------------
-            // power:
-
-            const restart = document.querySelectorAll('#screen > #taskbar > #iconBar > .windows > .menu > .power > .buttom > .holder > .restart')[0];
-
-            restart.onclick = function (){
-                screen1.style.background = 'black';
-                dd.classList.remove('seld');
-
-                ff.classList.remove('self');
-            }
 
             //-------------------------------------------------------------------------
             // layer:
@@ -584,4 +599,5 @@
             document.addEventListener('mouseup', () => {
                 isDragging = false;
             });
+
             });
