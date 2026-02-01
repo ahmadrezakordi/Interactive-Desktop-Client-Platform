@@ -348,6 +348,16 @@
                 t5.classList.add('sel4');
             };
 
+            // t5.onclick = function () {
+            //     if (p4.classList.contains('sel4')) {
+            //         p4.classList.remove('sel4');
+            //         menu1.classList.remove('sell');
+            //     } else {
+            //         p4.classList.add('sel4'); 
+            //         t5.classList.add('sel4');
+            //     }
+            // }
+
             function resettel() {
                 menu1.classList.remove('sell');
             }
@@ -491,6 +501,44 @@
             };
 
             //-------------------------------------------------------------------------
+            // menu:
+
+            const windows = document.querySelectorAll('#iconBar > .windows')[0];
+            const menu = document.querySelectorAll('#iconBar > .windows > .menu')[0];
+            var t1 = 0
+
+            windows.onclick = function (e) {
+                e.stopPropagation();
+                if (t1 == 0) {
+                    menu.style.display = 'block';
+                    t1 = 1;
+                } else if (t1 == 1) {
+                    menu.style.display = 'none';
+                    t1 = 0;
+                }
+            };
+
+            menu.addEventListener('click', function (e) {
+                    e.stopPropagation();
+                });
+
+            menu.onclick = function () {
+                resetFelesh();
+                resetPower();
+                resetRightClick();
+                resetBoxPc();
+            }
+
+            function resetWindows() {
+                    menu.style.display = 'none';
+                    t1 = 0;
+                }
+
+            document.body.addEventListener('click', function () {
+                    resetWindows();
+                });
+
+            //-------------------------------------------------------------------------
             // layer:
 
             const com = document.querySelectorAll('#screen > #desktop > #programBar > #myCoumputer > .icon')[0];
@@ -564,11 +612,21 @@
             ];
 
             draggableWindows.forEach(win => {
-            const header = win.querySelector('.bar1');
+            const header = win.querySelector('.bar1:not(.minimize)');
             let isDragging = false, offsetX, offsetY;
 
 
             header.addEventListener('mousedown', e => {
+
+                if (
+                    e.target.classList.contains('minimize') ||
+                    e.target.classList.contains('small') ||
+                    e.target.classList.contains('close')
+                ) {
+                    return;
+                }
+
+
                 isDragging = true;
                 offsetX = e.offsetX; // فاصله موس از گوشه پنجره
                 offsetY = e.offsetY;
@@ -599,5 +657,4 @@
             document.addEventListener('mouseup', () => {
                 isDragging = false;
             });
-
-            });
+        });
