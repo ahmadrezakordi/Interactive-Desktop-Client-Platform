@@ -61,8 +61,8 @@ Making it responsive would add artificial complexity without increasing the tech
 ---
 
 ## Live Demo
-Live Demo: [ADD YOUR LIVE LINK HERE]  
-Source Code: [ADD YOUR GITHUB LINK HERE]
+Live Demo: [https://ahmadrezakordi.github.io/Interactive-Desktop-Client-Platform/]  
+Source Code: [https://github.com/ahmadrezakordi/Interactive-Desktop-Client-Platform]
 
 ---
 
@@ -70,3 +70,4 @@ Source Code: [ADD YOUR GITHUB LINK HERE]
 **Ahmadreza Kordi**  
 Junior Frontend Developer  
 Focused on JavaScript fundamentals and UI engineering
+
