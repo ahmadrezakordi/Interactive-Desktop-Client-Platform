@@ -4,6 +4,9 @@
 **Platform:** Desktop-first Web Application  
 **Author:** Ahmad Reza Kordi 
 
+Live Demo: https://ahmadrezakordi.github.io/Interactive-Desktop-Client-Platform/
+Source Code: https://github.com/ahmadrezakordi/Interactive-Desktop-Client-Platform
+
 ## Overview
 Windows Web Simulator is a creative frontend project that recreates a Windows-style desktop environment entirely in the browser.
 
@@ -70,4 +73,5 @@ Source Code: [https://github.com/ahmadrezakordi/Interactive-Desktop-Client-Platf
 **Ahmadreza Kordi**  
 Junior Frontend Developer  
 Focused on JavaScript fundamentals and UI engineering
+
 
